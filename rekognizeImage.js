@@ -23,25 +23,23 @@ exports.detectLabelsPromise = function (bucketName, fileName) {
         const run = async () => {
             try {
                 const data = await client.send(command);
-                //console.log("success", data);
+                
                 var outFileContents = '';
                 for (var item in data.Labels) {
-                    //console.log('item', data.Contents[item].Key);
-                    //console.log(data.Labels[item].Name, data.Labels[item].Confidence);
+                    
                     outFileContents += `${fileName},${data.Labels[item].Name},${data.Labels[item].Confidence}\r\n`;
                 };
                 try {
                     const data = fs.writeFileSync(outfileName, outFileContents, { flag: 'a+' })
-                    //file written successfully
+                    
                 } catch (err) {
                     reject(err);
                 }
-                resolve('success');
+                resolve(data.Labels);
             } catch (err) {
                 reject(err);
             }
         };
-        //console.log('fileName',fileName);
         run();
     })
 }
