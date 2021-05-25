@@ -6,7 +6,8 @@ What you will need in order to run this code:
 1) An Amazon AWS account (you can use Google Cloud's Vision API, but I do not provide code for that)
 2) AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html)
 3) Node JS (https://nodejs.org/en/download/)
-4) An IP video camera (one that allows you to connect to it over your home network; many brands do not allow this). This is the one I use: https://www.amazon.com/gp/product/B07789DM4R/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
+4) FFmpeg (https://www.ffmpeg.org/download.html)
+5) An IP video camera (one that allows you to connect to it over your home network; many brands do not allow this). This is the one I use: https://www.amazon.com/gp/product/B07789DM4R/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
 
 
 # instructions
@@ -22,5 +23,5 @@ What you will need in order to run this code:
 8) run the program by typing "node app"
 
 Arduino Circuit
-(comming soon)
+(coming soon)
 
